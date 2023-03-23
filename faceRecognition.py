@@ -33,9 +33,9 @@ def Capture_position(vedio_name):
 
 
 import os
-path="./vedio/patient/"  #待读取的文件夹
+path="./vedio/patient/"  
 path_list=os.listdir(path)
-path_list.sort() #对读取的路径进行排序
+path_list.sort() 
 for filename in path_list:
     print(os.path.join(filename))
     vedio_name = os.path.join(filename)
