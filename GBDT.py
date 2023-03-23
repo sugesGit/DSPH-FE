@@ -51,14 +51,14 @@ def dataset(path, dataindex = 63, labelindex = 64, startdata = 0, flag= False, s
 
 
 def acu_curve(y,prob):
-    fpr,tpr,threshold = roc_curve(y,prob) ###计算真正率和假正率
-    roc_auc = auc(fpr,tpr) ###计算auc的值
+    fpr,tpr,threshold = roc_curve(y,prob) 
+    roc_auc = auc(fpr,tpr) 
  
     plt.figure()
     lw = 2
     plt.figure(figsize=(10,10))
     plt.plot(fpr, tpr, color='darkorange',
-             lw=lw, label='ROC curve (area = %0.3f)' % roc_auc) ###假正率为横坐标，真正率为纵坐标做曲线
+             lw=lw, label='ROC curve (area = %0.3f)' % roc_auc)
     plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
