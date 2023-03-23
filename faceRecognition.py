@@ -40,16 +40,3 @@ for filename in path_list:
     print(os.path.join(filename))
     vedio_name = os.path.join(filename)
     Capture_position(vedio_name)
-
-
-
-
-
-
-
-
-
-
-
-
-
