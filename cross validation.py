@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.model_selection import cross_val_score
-from sklearn import svm  # SVM算法
+from sklearn import svm  # SVM
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
 from sklearn.naive_bayes import GaussianNB
