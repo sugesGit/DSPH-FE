@@ -12,7 +12,7 @@ capture geometric features
 g_path = "./data/Original_DATA/geometric_features/jihe_train.csv"
 g_data = pd.read_csv(g_path, header = None)
 g_data =  np.array(g_data)
-participants_sequence = g_data[:,63]   #获取每条特征的参与者编号，记作participant
+participants_sequence = g_data[:,63]   
 # g_features = g_data[:,:63]
 g_features = g_data
 participants_num = np.unique(participants_sequence)
@@ -24,7 +24,7 @@ capture texture features
 '''
 t_rootpath = './data/Original_DATA/texture_features/'
 
-#participants需手动修改，要与几何特征数据集顺序保持一致
+#participants
 # participants = [516, 775, 605, 504, 723, 
 #                 462, 592, 868, 565, 574, 
 #                 739, 455, 905, 917, ] #测试集
@@ -44,11 +44,11 @@ savepath = './data/Original_DATA/trainset.txt'
 flag = True
 for participant in participants:
     participant = int(participant)
-    num = participants_sequence.tolist().count(participant) #每个人的几何特征数量
+    num = participants_sequence.tolist().count(participant) 
     geometric = g_features[300:num-6,]
     g_features = g_features[num:,:]
     
-    #获取纹理特征
+    #texture features
     t_path = t_rootpath + '0' + str(participant) + '.csv'
     t_data = pd.read_csv(t_path, header = None)
     texture =  np.array(t_data)
