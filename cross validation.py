@@ -24,6 +24,3 @@ method= [RandomForestClassifier(),tree.DecisionTreeClassifier(criterion='gini'),
 for clf in method:
     print(clf)
     cross_Validation(clf,data,label)
-
-
-
