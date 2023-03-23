@@ -11,8 +11,6 @@ def read(path):
     random.shuffle(data)
     return data
 def load_data(path_train, path_test):
-    # data = np.loadtxt(open("C://Users/Administrator/Desktop/夏令营/experiment/data/difference/learning.data","rb"),delimiter=",",skiprows=0)
-
     datatrain = read(path_train)
     datatest = read(path_test)
 
@@ -25,7 +23,7 @@ def load_data(path_train, path_test):
 if __name__=='__main__':
     path_train = "./data/Original_DATA/trainset.txt"
     path_test = "./data/Original_DATA/testset.txt"
-    X,y=load_data(path_train, path_test) # 产生用于降维的数据集
+    X,y=load_data(path_train, path_test)
     print(X,y)
 
     # feature normalization (feature scaling)
@@ -35,7 +33,7 @@ if __name__=='__main__':
     print(x.shape)
 
     # PCA
-    pca = PCA(n_components=0.95)# 保证降维后的数据保持95%的信息
+    pca = PCA(n_components=0.95)
     pca
     pca.fit(x)
     result=pca.transform(x)
