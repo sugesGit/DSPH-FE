@@ -27,7 +27,7 @@ t_rootpath = './data/Original_DATA/texture_features/'
 #participants
 # participants = [516, 775, 605, 504, 723, 
 #                 462, 592, 868, 565, 574, 
-#                 739, 455, 905, 917, ] #测试集
+#                 739, 455, 905, 917, ]
 participants = [531, 884, 488, 651, 470,    #1
                 493, 897, 535, 872,
                 685, 856, 523, 664, 640,
