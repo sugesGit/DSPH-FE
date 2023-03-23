@@ -1,6 +1,6 @@
 # DSPH-FE
-Detection of hypomimia in patients with Parkinson’s disease via smile videos 
-The paper is available [[here]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8422154/).
+Detection of hypomimia in patients with Parkinson’s disease via smile videos.  
+The paper [[here]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8422154/).
 
 ![the overview can be seen as follow](https://github.com/ronronnersu/DSPH-FE/blob/main/figure/overview.png)
 
